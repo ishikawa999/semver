@@ -9,4 +9,8 @@ class Version
   def number
     "#{@major}.#{@minor}.#{@patch}"
   end
+
+  def ==(version)
+    number == version.number
+  end
 end
